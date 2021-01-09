@@ -24,6 +24,9 @@ The predictions are to be done at the audio file level, i.e., no start/end times
 ### One weird trick for parallelizing convolutional neural networks: #AlexNet
 https://arxiv.org/pdf/1404.5997.pdf
 
+### VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION: #VGG
+https://arxiv.org/pdf/1409.1556.pdf
+
 
 ### Deep Residual Learning for Image Recognition: #ResNet
 https://arxiv.org/pdf/1512.03385.pdf
