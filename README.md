@@ -17,3 +17,23 @@ The predictions are to be done at the audio file level, i.e., no start/end times
 
 
 -------
+
+## Paper:
+
+
+### One weird trick for parallelizing convolutional neural networks: #AlexNet
+https://arxiv.org/pdf/1404.5997.pdf
+
+
+### Deep Residual Learning for Image Recognition: #ResNet
+https://arxiv.org/pdf/1512.03385.pdf
+
+
+### Aggregated Residual Transformations for Deep Neural Networks: ResNeXt
+https://arxiv.org/pdf/1611.05431.pdf
+
+
+
+
+--------
+
