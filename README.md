@@ -46,11 +46,17 @@ https://arxiv.org/pdf/1611.05431.pdf
 
 ## RFCX Custom training with TPU
 
+### N_FOLDS: default = 5
+
+      N_FOLDS = 5        LB error   ver1
+      N_FOLDS = 4        LB error   ver3
+      N_FOLDS = 3        LB 0.796   ver2
+
 ### LEARNING_RATE: default = 0.0015
 
+N_FOLDS = 3:
 
-
-      #LEARNING_RATE = 0.0015
-      #LEARNING_RATE = 0.005
-      #LEARNING_RATE = 0.001
-      LEARNING_RATE = 0.0005
+      LEARNING_RATE = 0.005     LB error   ver4
+      LEARNING_RATE = 0.0015    LB 0.796   ver2   ---  default
+      LEARNING_RATE = 0.001     LB 0.815   ver5
+      LEARNING_RATE = 0.0005    LB 0.769   ver6
