@@ -45,6 +45,7 @@ https://arxiv.org/pdf/1611.05431.pdf
 -------
 
 ## RFCX Custom training with TPU
+https://www.kaggle.com/ashusma/rfcx-custom-training-with-tpu
 
 ### N_FOLDS: default = 5
 
@@ -60,3 +61,19 @@ N_FOLDS = 3:
       LEARNING_RATE = 0.0015    LB 0.796   ver2   ---  default
       LEARNING_RATE = 0.001     LB 0.815   ver5
       LEARNING_RATE = 0.0005    LB 0.769   ver6
+
+
+-------
+
+## RFCX Bagging
+https://www.kaggle.com/kneroma/rfcx-bagging
+
+
+### weights: default = np.array([0.6, 0.4])
+
+      weights = np.array([0.5, 0.5])   LB         ver
+      weights = np.array([0.6, 0.4])   LB 0.869   ver1   ---  default
+      weights = np.array([0.7, 0.3])   LB         ver
+
+-------
+
