@@ -36,7 +36,21 @@ https://arxiv.org/pdf/1512.03385.pdf
 https://arxiv.org/pdf/1611.05431.pdf
 
 
-
-
 --------
 
+## Progress
+### LB Best score: 
+
+
+-------
+
+## RFCX Custom training with TPU
+
+### LEARNING_RATE: default = 0.0015
+
+
+
+      #LEARNING_RATE = 0.0015
+      #LEARNING_RATE = 0.005
+      #LEARNING_RATE = 0.001
+      LEARNING_RATE = 0.0005
