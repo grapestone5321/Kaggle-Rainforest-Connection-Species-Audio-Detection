@@ -71,9 +71,9 @@ https://www.kaggle.com/kneroma/rfcx-bagging
 
 ### weights: default = np.array([0.6, 0.4])
 
-      weights = np.array([0.5, 0.5])   LB         ver
+      weights = np.array([0.5, 0.5])   LB 0.868   ver2
       weights = np.array([0.6, 0.4])   LB 0.869   ver1   ---  default
-      weights = np.array([0.7, 0.3])   LB         ver
+      weights = np.array([0.7, 0.3])   LB 0.868   ver3
 
 -------
 
