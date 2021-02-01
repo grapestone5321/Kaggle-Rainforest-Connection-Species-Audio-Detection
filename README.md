@@ -62,7 +62,14 @@ N_FOLDS = 3:
       LEARNING_RATE = 0.001     LB 0.815   ver5
       LEARNING_RATE = 0.0005    LB 0.769   ver6
 
+### dropout: default = 0.35
 
+LEARNING_RATE = 0.001:
+
+      dropout = 0.35     LB 0.815   ver5
+      dropout = 0.40     LB 0.780   ver9
+      
+      
 -------
 
 ## RFCX Bagging
