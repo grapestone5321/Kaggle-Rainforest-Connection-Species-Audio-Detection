@@ -84,6 +84,9 @@ LEARNING_RATE = 0.001:
 ## RFCX Bagging
 https://www.kaggle.com/kneroma/rfcx-bagging
 
+      sub_score = np.sum(scores*weights[:, None, None], 0)
+
+
 
 ### weights: default = np.array([0.6, 0.4])
 
