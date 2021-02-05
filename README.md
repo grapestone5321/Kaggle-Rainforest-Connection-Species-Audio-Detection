@@ -67,12 +67,13 @@ N_FOLDS = 3:
 LEARNING_RATE = 0.001:
 
       dropout = 0.30     LB 0.795   ver10     
-      dropout = 0.35     LB 0.815   ver5
+      dropout = 0.35     LB 0.815   ver5     ---  default
       dropout = 0.40     LB 0.780   ver9
 
 ## EPOCHS: default = 25
- 
-      EPOCHS = 25    LB 0.815   ver5
+
+      EPOCHS = 20    LB         ver12
+      EPOCHS = 25    LB 0.815   ver5       ---  default
       EPOCHS = 50    LB 0.777   ver11   
     
 -------
