@@ -73,8 +73,9 @@ LEARNING_RATE = 0.001:
 ## EPOCHS: default = 25
 
       EPOCHS = 15    LB 0.787   ver13
+      EPOCHS = 18    LB 0.818   ver15
       EPOCHS = 20    LB 0.824   ver12      ---  best
-      EPOCHS = 22    LB         ver14
+      EPOCHS = 22    LB 0.801   ver14
       EPOCHS = 25    LB 0.815   ver5       ---  default
       EPOCHS = 50    LB 0.777   ver11   
     
