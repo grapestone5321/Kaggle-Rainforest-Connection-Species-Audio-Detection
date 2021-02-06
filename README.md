@@ -55,6 +55,23 @@ https://www.kaggle.com/kneroma/rfcx-bagging
       weights = np.array([0.7, 0.3])   LB 0.868   ver3
 
 
+### paths = [
+
+      #1"../input/rfcx-best-performing-public-kernels/kkiller_inference-tpu-rfcx-audio-detection-fast_0861.csv",
+      #2"../input/rfcx-best-performing-public-kernels/submission_khoongweihao_0845.csv",
+      #3"../input/rfcx-best-performing-public-kernels/submission_mekhdigakhramanian_0824.csv",
+
+weights = np.array([0.6, 0.4]):
+
+     #1, #2     LB 0.869   ver1   ---  default
+     #1, #3     LB 0.863   ver4
+     #2, #3     LB 0.842   ver5
+
+
+
+
+
+
 -------
 
 ## RFCX Custom training with TPU
