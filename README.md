@@ -46,20 +46,27 @@ https://arxiv.org/pdf/1611.05431.pdf
 ## RFCX Bagging
 https://www.kaggle.com/kneroma/rfcx-bagging
 
-      sub_score = np.sum(scores*weights[:, None, None], 0)
-
-### weights: default = np.array([0.6, 0.4])
-
-      weights = np.array([0.5, 0.5])   LB 0.868   ver2
-      weights = np.array([0.6, 0.4])   LB 0.869   ver1   ---  default
-      weights = np.array([0.7, 0.3])   LB 0.868   ver3
-
-
 ### paths = [
 
       #1"../input/rfcx-best-performing-public-kernels/kkiller_inference-tpu-rfcx-audio-detection-fast_0861.csv",
       #2"../input/rfcx-best-performing-public-kernels/submission_khoongweihao_0845.csv",
       #3"../input/rfcx-best-performing-public-kernels/submission_mekhdigakhramanian_0824.csv",
+
+      sub_score = np.sum(scores*weights[:, None, None], 0)
+
+
+### weights: default = np.array([0.6, 0.4])
+
+#1, #2: 
+
+      weights = np.array([0.5, 0.5])     LB 0.868   ver2
+      weights = np.array([0.55, 0.45])   LB 0.869   ver
+      weights = np.array([0.6, 0.4])     LB 0.869   ver1   ---  default
+      weights = np.array([0.65, 0.35])   LB 0.869   ver6
+      weights = np.array([0.7, 0.3])     LB 0.868   ver3
+
+
+
 
 weights = np.array([0.6, 0.4]):
 
@@ -104,7 +111,7 @@ LEARNING_RATE = 0.001:
 
       EPOCHS = 15    LB 0.787   ver13
       EPOCHS = 18    LB 0.818   ver15
-      EPOCHS = 19    LB         ver17
+      EPOCHS = 19    LB 0.804   ver17
       EPOCHS = 20    LB 0.824   ver12      ---  best
       EPOCHS = 21    LB 0.788   ver16
       EPOCHS = 22    LB 0.801   ver14
