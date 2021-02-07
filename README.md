@@ -123,4 +123,44 @@ LEARNING_RATE = 0.001:
     
 -------
 
+## [AutoML] [Inference] Audio Detection - Soli 346f45
 
+
+### ked = pd.DataFrame
+
+      'Kernel ID': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I','J'],
+      'Symbol':    ['SoliSet', '[Inference] ResNest RFCX Audio Detection',  
+                    'notebookba481ef16a', 
+                    'All-in-one RFCX baseline for beginners', 
+                    'RFCX: train resnet50 with TPU',  
+                    'RFCX Resnet50 TPU', 
+                    'ResNet34 More Augmentations+Mixup+TTA (Inference)', 
+                    '[Inference][TPU] RFCX Audio Detection Fast++',
+                    'RFX Bagging Different Weights',
+                    'resnetwavenet'],
+      'Score':     [ 0.589 , 0.594 , 0.613 , 0.748 , 0.793 , 0.824 , 0.845 , 0.861, 0.876, 0.877 ],
+      'File Path':
+      #A '../input/audio-detection-soliset-201/submission.csv', 
+      #B '../input/inference-resnest-rfcx-audio-detection/submission.csv', 
+      #C '../input/minimal-fastai-solution-score-0-61/submission.csv', 
+      #D '../input/all-in-one-rfcx-baseline-for-beginners/submission.csv', 
+      #E '../input/rfcx-train-resnet50-with-tpu/submission.csv', 
+      #F '../input/rfcx-resnet50-tpu/submission.csv', 
+      #G '../input/resnet34-more-augmentations-mixup-tta-inference/submission.csv', 
+      #H '../input/inference-tpu-rfcx-audio-detection-fast/submission.csv',
+      #I '../input/rfcx-bagging-with-different-weights-0-876-score/submission.csv',
+      #J '../input/resnet-wavenet-my-best-single-model-ensemble/submission.csv'],      
+      'Note': ['xgboost & cuml(https://rapids.ai)', 
+               'torch & resnest50', 
+               'fastai.vision & torchaudio', 
+               'torch & resnest50', 
+               'tensorflow & tf.keras.Sequential', 
+               'tensorflow & tf.keras.Sequential', 
+               'tensorflow & classification_models.keras', 
+               'torch & resnest50', 
+               'bagging','0.877']                                                  
+ 
+ ### sub.to_csv(                  
+ 
+      "submission.csv"     LB 0.777   ver11
+      "submission4.csv"    LB 0.879   ver2
