@@ -129,7 +129,7 @@ LEARNING_RATE = 0.001:
 -------
 
 ## [AutoML] [Inference] Audio Detection - Soli 346f45
-
+https://www.kaggle.com/hypnotu/automl-inference-audio-detection-soliset
 
 ### ked = pd.DataFrame
 
