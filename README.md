@@ -82,6 +82,8 @@ https://www.kaggle.com/kneroma/rfcx-bagging
 
 ### #1, #4
 
+      weights = np.array([0.1, 0.9])      LB 0.877   ver12
+      weights = np.array([0.2, 0.8])      LB 0.877   ver11
       weights = np.array([0.3, 0.7])      LB 0.876   ver10
       weights = np.array([0.4, 0.6])      LB 0.873   ver9
 
