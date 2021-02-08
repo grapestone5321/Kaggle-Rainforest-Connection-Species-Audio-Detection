@@ -52,6 +52,7 @@ https://www.kaggle.com/kneroma/rfcx-bagging
       #2"../input/rfcx-best-performing-public-kernels/submission_khoongweihao_0845.csv",
       #3"../input/rfcx-best-performing-public-kernels/submission_mekhdigakhramanian_0824.csv",
       #4"/kaggle/input/rainforestconnectionemsamble1/rainforest-877.csv"
+      #5"/kaggle/input/rainforest879/rainforest-879.csv"
 
       sub_score = np.sum(scores*weights[:, None, None], 0)
 
@@ -86,7 +87,12 @@ https://www.kaggle.com/kneroma/rfcx-bagging
       weights = np.array([0.2, 0.8])      LB 0.877   ver11
       weights = np.array([0.3, 0.7])      LB 0.876   ver10
       weights = np.array([0.4, 0.6])      LB 0.873   ver9
+      
+ ### #4, #5     
 
+      weights = np.array([0.2, 0.8])      LB 0.879   ver14
+      weights = np.array([0.4, 0.6])      LB 0.879   ver13
+      
 -------
 
 ## RFCX Custom training with TPU
