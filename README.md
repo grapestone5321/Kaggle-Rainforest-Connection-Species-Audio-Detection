@@ -92,46 +92,9 @@ https://www.kaggle.com/kneroma/rfcx-bagging
 
       weights = np.array([0.2, 0.8])      LB 0.879   ver14
       weights = np.array([0.4, 0.6])      LB 0.879   ver13
+      weights = np.array([0.6, 0.4])      LB 0.877   ver15
+      weights = np.array([0.8, 0.2])      LB 0.877   ver16
       
--------
-
-## RFCX Custom training with TPU
-https://www.kaggle.com/ashusma/rfcx-custom-training-with-tpu
-
-### N_FOLDS: default = 5
-
-      N_FOLDS = 5        LB error   ver1
-      N_FOLDS = 4        LB error   ver3
-      N_FOLDS = 3        LB 0.796   ver2
-
-### LEARNING_RATE: default = 0.0015
-
-N_FOLDS = 3:
-
-      LEARNING_RATE = 0.005     LB error   ver4
-      LEARNING_RATE = 0.0015    LB 0.796   ver2   ---  default
-      LEARNING_RATE = 0.001     LB 0.815   ver5
-      LEARNING_RATE = 0.0005    LB 0.769   ver6
-
-### dropout: default = 0.35
-
-LEARNING_RATE = 0.001:
-
-      dropout = 0.30     LB 0.795   ver10     
-      dropout = 0.35     LB 0.815   ver5     ---  default
-      dropout = 0.40     LB 0.780   ver9
-
-## EPOCHS: default = 25
-
-      EPOCHS = 15    LB 0.787   ver13
-      EPOCHS = 18    LB 0.818   ver15
-      EPOCHS = 19    LB 0.804   ver17
-      EPOCHS = 20    LB 0.824   ver12      ---  best
-      EPOCHS = 21    LB 0.788   ver16
-      EPOCHS = 22    LB 0.801   ver14
-      EPOCHS = 25    LB 0.815   ver5       ---  default
-      EPOCHS = 50    LB 0.777   ver11   
-    
 -------
 
 ## [AutoML] [Inference] Audio Detection - Soli 346f45
@@ -175,3 +138,45 @@ https://www.kaggle.com/hypnotu/automl-inference-audio-detection-soliset
  
       "submission.csv"     LB 0.777   ver11
       "submission4.csv"    LB 0.879   ver2
+
+-------
+
+
+## RFCX Custom training with TPU
+https://www.kaggle.com/ashusma/rfcx-custom-training-with-tpu
+
+### N_FOLDS: default = 5
+
+      N_FOLDS = 5        LB error   ver1
+      N_FOLDS = 4        LB error   ver3
+      N_FOLDS = 3        LB 0.796   ver2
+
+### LEARNING_RATE: default = 0.0015
+
+N_FOLDS = 3:
+
+      LEARNING_RATE = 0.005     LB error   ver4
+      LEARNING_RATE = 0.0015    LB 0.796   ver2   ---  default
+      LEARNING_RATE = 0.001     LB 0.815   ver5
+      LEARNING_RATE = 0.0005    LB 0.769   ver6
+
+### dropout: default = 0.35
+
+LEARNING_RATE = 0.001:
+
+      dropout = 0.30     LB 0.795   ver10     
+      dropout = 0.35     LB 0.815   ver5     ---  default
+      dropout = 0.40     LB 0.780   ver9
+
+## EPOCHS: default = 25
+
+      EPOCHS = 15    LB 0.787   ver13
+      EPOCHS = 18    LB 0.818   ver15
+      EPOCHS = 19    LB 0.804   ver17
+      EPOCHS = 20    LB 0.824   ver12      ---  best
+      EPOCHS = 21    LB 0.788   ver16
+      EPOCHS = 22    LB 0.801   ver14
+      EPOCHS = 25    LB 0.815   ver5       ---  default
+      EPOCHS = 50    LB 0.777   ver11   
+    
+-------
