@@ -39,66 +39,11 @@ https://arxiv.org/pdf/1611.05431.pdf
 --------
 
 ## Progress
-### LB Best score: 
+### LB Best score: 0.879
 
 -------
 
-## RFCX Bagging
-https://www.kaggle.com/kneroma/rfcx-bagging
 
-### paths = [
-
-      #1"../input/rfcx-best-performing-public-kernels/kkiller_inference-tpu-rfcx-audio-detection-fast_0861.csv",
-      #2"../input/rfcx-best-performing-public-kernels/submission_khoongweihao_0845.csv",
-      #3"../input/rfcx-best-performing-public-kernels/submission_mekhdigakhramanian_0824.csv",
-      #4"/kaggle/input/rainforestconnectionemsamble1/rainforest-877.csv"
-      #5"/kaggle/input/rainforest879/rainforest-879.csv"
-
-      sub_score = np.sum(scores*weights[:, None, None], 0)
-
-
-### weights: default = np.array([0.6, 0.4])
-
-### #1, #2: 
-
-       weights = np.array([0.5, 0.5])     LB 0.868   ver2
-       weights = np.array([0.55, 0.45])   LB 0.869   ver7
-       weights = np.array([0.6, 0.4])     LB 0.869   ver1   ---  default
-       weights = np.array([0.65, 0.35])   LB 0.869   ver6
-       weights = np.array([0.7, 0.3])     LB 0.868   ver3
-
-### #1, #3
-
-      weights = np.array([0.5, 0.5])      LB         ver
-      weights = np.array([0.6, 0.4])      LB 0.863   ver4
-      weights = np.array([0.7, 0.3])      LB         ver
-     
-    
-### #2, #3  
-
-      weights = np.array([0.5, 0.5])      LB         ver
-      weights = np.array([0.6, 0.4])      LB 0.842   ver5
-      weights = np.array([0.7, 0.3])      LB         ver
-
-
-### #1, #4
-
-      weights = np.array([0.1, 0.9])      LB 0.877   ver12
-      weights = np.array([0.2, 0.8])      LB 0.877   ver11
-      weights = np.array([0.3, 0.7])      LB 0.876   ver10
-      weights = np.array([0.4, 0.6])      LB 0.873   ver9
-      
- ### #4, #5     
-
-      weights = np.array([0.05, 0.05])    LB 0.878   ver19
-      weights = np.array([0.1, 0.9])      LB 0.879   ver18
-      weights = np.array([0.2, 0.8])      LB 0.879   ver14
-      weights = np.array([0.4, 0.6])      LB 0.879   ver13
-      weights = np.array([0.6, 0.4])      LB 0.877   ver15
-      weights = np.array([0.8, 0.2])      LB 0.877   ver16
-      weights = np.array([0.9, 0.1])      LB 0.877   ver17
-      
--------
 
 ## [AutoML] [Inference] Audio Detection - Soli 346f45
 https://www.kaggle.com/hypnotu/automl-inference-audio-detection-soliset
@@ -183,3 +128,73 @@ LEARNING_RATE = 0.001:
       EPOCHS = 50    LB 0.777   ver11   
     
 -------
+
+## RFCX Bagging
+https://www.kaggle.com/kneroma/rfcx-bagging
+
+### paths = [
+
+      #1"../input/rfcx-best-performing-public-kernels/kkiller_inference-tpu-rfcx-audio-detection-fast_0861.csv",
+      #2"../input/rfcx-best-performing-public-kernels/submission_khoongweihao_0845.csv",
+      #3"../input/rfcx-best-performing-public-kernels/submission_mekhdigakhramanian_0824.csv",
+      #4"/kaggle/input/rainforestconnectionemsamble1/rainforest-877.csv"
+      #5"/kaggle/input/rainforest879/rainforest-879.csv"
+
+      sub_score = np.sum(scores*weights[:, None, None], 0)
+
+
+### weights: default = np.array([0.6, 0.4])
+
+### #1, #2: 
+
+       weights = np.array([0.5, 0.5])     LB 0.868   ver2
+       weights = np.array([0.55, 0.45])   LB 0.869   ver7
+       weights = np.array([0.6, 0.4])     LB 0.869   ver1   ---  default
+       weights = np.array([0.65, 0.35])   LB 0.869   ver6
+       weights = np.array([0.7, 0.3])     LB 0.868   ver3
+
+### #1, #3
+
+      weights = np.array([0.5, 0.5])      LB         ver
+      weights = np.array([0.6, 0.4])      LB 0.863   ver4
+      weights = np.array([0.7, 0.3])      LB         ver
+     
+    
+### #2, #3  
+
+      weights = np.array([0.5, 0.5])      LB         ver
+      weights = np.array([0.6, 0.4])      LB 0.842   ver5
+      weights = np.array([0.7, 0.3])      LB         ver
+
+
+### #1, #4
+
+      weights = np.array([0.1, 0.9])      LB 0.877   ver12
+      weights = np.array([0.2, 0.8])      LB 0.877   ver11
+      weights = np.array([0.3, 0.7])      LB 0.876   ver10
+      weights = np.array([0.4, 0.6])      LB 0.873   ver9
+      
+ ### #4, #5     
+
+      weights = np.array([0.05, 0.05])    LB 0.878   ver19
+      weights = np.array([0.1, 0.9])      LB 0.879   ver18
+      weights = np.array([0.2, 0.8])      LB 0.879   ver14
+      weights = np.array([0.4, 0.6])      LB 0.879   ver13
+      weights = np.array([0.6, 0.4])      LB 0.877   ver15
+      weights = np.array([0.8, 0.2])      LB 0.877   ver16
+      weights = np.array([0.9, 0.1])      LB 0.877   ver17
+ 
+ 
+ ### #1, #5     
+
+      weights = np.array([0.05, 0.05])    LB 0.869   ver23
+      weights = np.array([0.1, 0.9])      LB 0.879   ver22
+      weights = np.array([0.2, 0.8])      LB 0.879   ver21
+      weights = np.array([0.4, 0.6])      LB 0.875   ver20
+      weights = np.array([0.6, 0.4])      LB         ver
+      weights = np.array([0.8, 0.2])      LB 0.862   ver24
+      weights = np.array([0.9, 0.1])      LB         ver
+      
+-------
+
+
