@@ -189,12 +189,31 @@ https://www.kaggle.com/kneroma/rfcx-bagging
 
       weights = np.array([0.05, 0.05])    LB 0.869   ver23
       weights = np.array([0.1, 0.9])      LB 0.879   ver22
+      weights = np.array([0.15, 0.85])    LB 0.879   ver29
       weights = np.array([0.2, 0.8])      LB 0.879   ver21
       weights = np.array([0.4, 0.6])      LB 0.875   ver20
       weights = np.array([0.6, 0.4])      LB         ver
       weights = np.array([0.8, 0.2])      LB 0.862   ver24
       weights = np.array([0.9, 0.1])      LB         ver
+ 
+ ### #2, #5     
+
+      weights = np.array([0.05, 0.05])    LB 0.865   ver27
+      weights = np.array([0.1, 0.9])      LB 0.879   ver26
+      weights = np.array([0.15, 0.85])    LB 0.878   ver28
+      weights = np.array([0.2, 0.8])      LB 0.878   ver25
+      weights = np.array([0.4, 0.6])      LB         ver
+      weights = np.array([0.6, 0.4])      LB         ver
+      weights = np.array([0.8, 0.2])      LB         ver
+      weights = np.array([0.9, 0.1])      LB         ver
       
+      
+      
+-------
+
+## [Ensembling] [0.880] Audio Detection - 101
+https://www.kaggle.com/mehrankazeminia/ensembling-0-880-audio-detection-101
+
 -------
 
 
