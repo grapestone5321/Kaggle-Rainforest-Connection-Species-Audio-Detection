@@ -15,6 +15,17 @@ Some test audio files contain a single species while others contain multiple.
 
 The predictions are to be done at the audio file level, i.e., no start/end timestamps are required.
 
+-------
+
+### Data Description
+
+In this competition, you are given audio files that include sounds from numerous species. 
+
+Your task is, for each test audio file, to predict the probability that each of the given species is audible in the audio clip. 
+
+While the training files contain both the species identification as well as the time the species was heard, the time localization is not part of the test predictions.
+
+Note that the training data also includes false positive label occurrences to assist with training.
 
 -------
 
