@@ -214,6 +214,72 @@ https://www.kaggle.com/kneroma/rfcx-bagging
 ## [Ensembling] [0.880] Audio Detection - 101
 https://www.kaggle.com/mehrankazeminia/ensembling-0-880-audio-detection-101
 
+### Data Set
+
+      sub845 = pd.read_csv("../input/resnet34-more-augmentations-mixup-tta-inference/submission.csv")
+      sub861 = pd.read_csv("../input/inference-tpu-rfcx-audio-detection-fast/submission.csv")
+      sub877 = pd.read_csv("../input/resnet-wavenet-my-best-single-model-ensemble/submission.csv")
+
+
+### Functions
+
+      def generate(main, support, coeff):
+          g1 = main.copy()
+          g2 = main.copy()
+          g3 = main.copy()
+          g4 = main.copy()
+    
+          for i in main.columns[1:]:
+              lm, Is = [], []                
+              lm = main[i].tolist()
+              ls = support[i].tolist() 
+        
+              res1, res2, res3, res4 = [], [], [], []          
+              for j in range(len(main)):
+                  res1.append(max(lm[j] , ls[j]))
+                  res2.append(min(lm[j] , ls[j]))
+                  res3.append((lm[j] + ls[j]) / 2)
+                  res4.append((lm[j] * coeff) + (ls[j] * (1.- coeff)))
+            
+              g1[i] = res1
+              g2[i] = res2
+              g3[i] = res3
+              g4[i] = res4
+        
+          return g1,g2,g3,g4
+
+
+      def generate1(main, support, coeff):
+    
+          g = main.copy()    
+          for i in main.columns[1:]:
+        
+              res = []
+              lm, Is = [], []        
+              lm = main[i].tolist()
+              ls = support[i].tolist()  
+        
+              for j in range(len(main)):
+                  res.append((lm[j] * coeff) + (ls[j] * (1.- coeff)))            
+              g[i] = res
+        
+          return g
+
+### Ensembling
+
+      a1,a2,a3,a4 = generate(sub861, sub845, 0.80)
+      b1,b2,b3,b4 = generate(sub877, a2, 0.85) 
+
+      sub = b4
+      sub.to_csv("submission.csv", index=False)
+
+      b1.to_csv("submission1.csv", index=False)
+      b2.to_csv("submission2.csv", index=False)
+      b3.to_csv("submission3.csv", index=False)
+      b4.to_csv("submission4.csv", index=False)
+
+### Submission
+
       submission.csv     LB 0.880   ver1
       submission1.csv    LB 0.877   ver1
       submission2.csv    LB 0.478   ver1
@@ -227,18 +293,6 @@ a1,a2,a3,a4 = generate(sub861, sub845, 0.80)
       b1,b2,b3,b4 = generate(sub877, a2, 0.80)  LB 0.879   ver2
       b1,b2,b3,b4 = generate(sub877, a2, 0.85)  LB 0.880   ver1   --- default
       b1,b2,b3,b4 = generate(sub877, a2, 0.90)  LB 0.879   ver3
-
-
-
-
-      
-      
-      
-      
-      
-      
-      
-
 
 -------
 
