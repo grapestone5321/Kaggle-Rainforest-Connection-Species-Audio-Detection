@@ -302,8 +302,14 @@ https://www.kaggle.com/mehrankazeminia/ensembling-0-880-audio-detection-101
 a1,a2,a3,a4 = generate(sub861, sub845, 0.80)
 
       b1,b2,b3,b4 = generate(sub877, a2, 0.80)  LB 0.879   ver2
+      b1,b2,b3,b4 = generate(sub877, a2, 0.82)  LB 0.879   ver8
+      b1,b2,b3,b4 = generate(sub877, a2, 0.83)  LB 0.880   ver6
+      b1,b2,b3,b4 = generate(sub877, a2, 0.84)  LB 0.880   ver4 
       b1,b2,b3,b4 = generate(sub877, a2, 0.85)  LB 0.880   ver1   --- default
+      b1,b2,b3,b4 = generate(sub877, a2, 0.86)  LB 0.880   ver5
+      b1,b2,b3,b4 = generate(sub877, a2, 0.87)  LB 0.879   ver7
       b1,b2,b3,b4 = generate(sub877, a2, 0.90)  LB 0.879   ver3
+
 
 -------
 
