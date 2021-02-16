@@ -312,18 +312,27 @@ a1,a2,a3,a4 = generate(sub861, sub845, 0.80)
 
 
 
-b1,b2,b3,b4 = generate(sub877, a2, 0.85)
+b1,b2,b3,b4 = generate(sub877, a2, 0.85): sub877 changed
 
       a1,a2,a3,a4 = generate(sub861, sub845, 0.75)  LB 0.853   ver10
       a1,a2,a3,a4 = generate(sub861, sub845, 0.81)  LB 0.853   ver12
       a1,a2,a3,a4 = generate(sub861, sub845, 0.80)  LB 0.853   ver13
-      a1,a2,a3,a4 = generate(sub861, sub845, 0.80)  LB 0.880   ver1   --- default
+      a1,a2,a3,a4 = generate(sub861, sub845, 0.80)  LB 0.880   ver1 ,ver14  --- default
       a1,a2,a3,a4 = generate(sub861, sub845, 0.81)  LB 0.853   ver11
       a1,a2,a3,a4 = generate(sub861, sub845, 0.85)  LB 0.853   ver9
       
 
+a1,a2,a3,a4 = generate(sub861, sub845, 0.80)
 
+      b1,b2,b3,b4 = generate(sub879, a2, 0.80)  LB 0.879   ver17
+      b1,b2,b3,b4 = generate(sub879, a2, 0.85)  LB 0.879   ver15   --- default
+      b1,b2,b3,b4 = generate(sub877, a2, 0.90)  LB 0.879   ver16
 
+a1,a2,a3,a4 = generate(sub877, sub861, 0.80)
+
+      b1,b2,b3,b4 = generate(sub879, a2, 0.85)  LB 0.879   ver18   --- default
+
+ 
 -------
 
 
