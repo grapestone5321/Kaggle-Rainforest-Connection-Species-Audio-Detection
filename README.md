@@ -51,6 +51,7 @@ https://arxiv.org/pdf/1611.05431.pdf
 
 ## Progress
 ### public LB Best score: 0.880
+### Private Score: 0.884
 
 -------
 
